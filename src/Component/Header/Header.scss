@@ -1,0 +1,46 @@
+@import "../../styles/partials/typography";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 70px;
+
+  &__logo img {
+    width: 20rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__links {
+    list-style: none;
+    display: flex;
+
+    &--each {
+      text-decoration: none;
+      padding-right: 30px;
+      font-family: Abel;
+      font-size: 2rem;
+      font-weight: 600;
+      position: relative;
+      color: #0f3054;
+    }
+  }
+}
+
+.header__links--each::after {
+  content: "";
+  height: 4px;
+  width: 75%;
+  background-color: rgb(36, 122, 214);
+  position: absolute;
+  bottom: -10px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.header__links--each:hover::after{
+opacity: 1;
+}
