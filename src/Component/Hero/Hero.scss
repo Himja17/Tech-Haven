@@ -1,0 +1,58 @@
+@import "../../styles/partials/mixins";
+
+.hero {
+  &__img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  &__headline {
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+    z-index: 2;
+    font-family: abel;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__para {
+    width: 25%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: #fff;
+    z-index: 2;
+    font-family: abel;
+    font-size: 19px;
+  }
+}
+.hero__img-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80vh;
+  background-color: #2f399e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 0;
+  background-image: linear-gradient(to right, #14489c, #05275e);
+}
+.hero__img-container {
+  position: relative;
+}
+
+.hero__bttn {
+  @include hero-bttn;
+}
+
+.hero__bttn:hover {
+  background-color: rgb(22, 113, 216);
+  cursor: pointer;
+}

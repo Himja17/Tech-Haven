@@ -1,0 +1,52 @@
+[
+  {
+    "image": "/assets/Services-Img/on-site-small-business.jpg",
+    "name": "On-Site Support for Small Businesses",
+    "detail": "Technical assistance and troubleshooting directly at the Business location to minimize disruptions and optimize productivity"
+  },
+  {
+    "image": "/assets/Services-Img/residential-on-site.jpg",
+    "name": "Residential On-Site IT Assistance",
+    "detail": "Personalized technical support, resolving computer and network issues to ensure smooth operation and user satisfaction within a residential setting"
+  },
+  {
+    "image": "/assets/Services-Img/it-consulting.jpg",
+    "name": "IT Consulting Services",
+    "detail": "Expert guidance and advice to businesses or individuals seeking assistance with their Information Technology infrastructure, strategy, and operations"
+  },
+  {
+    "image": "/assets/Services-Img/remote-helpdesk.jpg",
+    "name": "Remote Help Desk Support",
+    "detail": "Offering technical assistance and troubleshooting to users remotely, often through phone, chat, or remote desktop software"
+  },
+  {
+    "image": "/assets/Services-Img/managed-services-solution.jpg",
+    "name": "Managed Services Solution",
+    "detail": "Proactive monitoring, maintenance, and support, aiming to optimize performance, enhance security, and minimize downtime while allowing Businesses to focus on their core objectives."
+  },
+  {
+    "image": "/assets/Services-Img/cloud-services.jpg",
+    "name": "Cloud Services",
+    "detail": "Expertise in leveraging cloud technology such as Cloud Migration and many more to help businesses streamline operations, enhance agility, and achieve their IT objectives."
+  },
+  {
+    "image": "/assets/Services-Img/office-relocation.jpg",
+    "name": "Office Relocation Services",
+    "detail": "Assisting Businesses with the physical relocation of their office spaces minimizing downtime, mitigate risks, and ensure a smooth and efficient transition for Businesses moving to a new physical location."
+  },
+  {
+    "image": "/assets/Services-Img/hardware-install.jpg",
+    "name": "Hardware and Software Installation",
+    "detail": "Setup and configuration of Computer Hardware Components and Software Applications to ensure they function correctly and meet the Businesses requirement."
+  },
+  {
+    "image": "/assets/Services-Img/computer-data-cabling.jpg",
+    "name": "Phone and Computer Data Cabling",
+    "detail": "Installation and setup of structured Cabling Systems to support Telecommunications and Data Networking Infrastructure within an organization"
+  },
+  {
+    "image": "/assets/Services-Img/e-waste.jpg",
+    "name": "E-Waste Services",
+    "detail": "Responsible disposal and recycling of electronic waste, such as old computers, smartphones, tablets, printers, and other electronic devices"
+  }
+]
