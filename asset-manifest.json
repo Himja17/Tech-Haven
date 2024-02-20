@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tech-haven/static/css/main.151c7f0b.css",
+    "main.js": "/tech-haven/static/js/main.97d5ed3d.js",
+    "static/js/592.df948212.chunk.js": "/tech-haven/static/js/592.df948212.chunk.js",
+    "static/media/hero-img.jpg": "/tech-haven/static/media/hero-img.999f86a5b23bca75d9ce.jpg",
+    "static/media/it-work.jpg": "/tech-haven/static/media/it-work.f8a5752cdf27116edf60.jpg",
+    "static/media/logo.png": "/tech-haven/static/media/logo.881d81d0fcad460fed32.png",
+    "static/media/Abel.ttf": "/tech-haven/static/media/Abel.3843f456cf56d275baf6.ttf",
+    "index.html": "/tech-haven/index.html",
+    "main.151c7f0b.css.map": "/tech-haven/static/css/main.151c7f0b.css.map",
+    "main.97d5ed3d.js.map": "/tech-haven/static/js/main.97d5ed3d.js.map",
+    "592.df948212.chunk.js.map": "/tech-haven/static/js/592.df948212.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.151c7f0b.css",
+    "static/js/main.97d5ed3d.js"
+  ]
+}
