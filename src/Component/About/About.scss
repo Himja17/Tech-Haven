@@ -1,0 +1,74 @@
+@import "../../styles/partials/typography";
+
+.about {
+  &__main {
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    font-family: Abel;
+    font-size: 40px;
+    text-align: center;
+    margin: 70px 0 50px 0;
+    padding-top: 30px;
+    color: #0f3054;
+  }
+  &__img-container {
+    position: relative;
+  }
+
+  &__img {
+    width: 600px;
+    height: 520px;
+    margin: 10px 50px;
+    float: left;
+  }
+  &__img-border {
+    position: absolute;
+    top: -1px;
+    left: 115px;
+    z-index: -10;
+    border: 4px solid #1d5c9f;
+    border-image: linear-gradient(#0c1d7a, #1c82e8) 30;
+    height: 535px;
+    width: 540px;
+  }
+}
+.about-content {
+  &__para {
+    font-family: Abel;
+    font-size: 22px;
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  &__subtitle {
+    font-family: Abel;
+    font-size: 30px;
+    color: #0f3054;
+  }
+}
+.about-content__list > li {
+  list-style: none;
+  margin: 0.4em 0;
+  font-family: abel;
+  font-size: 22px;
+  width: 90%;
+}
+.about-content__list > li::before {
+  content: "\2713";
+  background-color: #0e4788;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  border: 2px solid #0e4788;
+  border-radius: 50%;
+  text-align: center;
+}
