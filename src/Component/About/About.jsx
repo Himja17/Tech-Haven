@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="about__main">
       <h1 className="about__title">
-        IT That <bold>Works</bold> For You
+        IT That Works For You
       </h1>
       <div className="about__img-container">
         <img src={itWork} alt="working technicians" className="about__img" />

@@ -1,4 +1,5 @@
 @import "../../styles/partials/typography";
+@import "../../styles/partials/mixins";
 
 .header {
   display: flex;
@@ -27,6 +28,9 @@
       color: #0f3054;
     }
   }
+  &__links-toggle {
+    display: flex;
+  }
 }
 
 .header__links--each::after {
@@ -41,6 +45,30 @@
   pointer-events: none;
 }
 
-.header__links--each:hover::after{
-opacity: 1;
+.header__links--each:hover::after {
+  opacity: 1;
+}
+.hamburger{
+  display: none;
+}
+
+@include mobileView {
+  .header__links {
+    display: none;
+  }
+
+  .header__logo img {
+    width: 10rem;
+  }
+  .header {
+    margin: 15px;
+    
+  }
+  .hamburger {
+     display: flex;
+    width: 40px;
+    height: 45px;
+    color: #0f3054;
+    cursor: pointer;
+  }
 }

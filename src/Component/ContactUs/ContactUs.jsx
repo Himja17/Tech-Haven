@@ -13,10 +13,10 @@ function ContactUS() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_bohxf1h";
-    const templateID = "template_9tqbe63";
-    const publicKey = "-m-Z3gWmiG0t730_k";
-
+    const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+    console.log(PUBLIC_KEY);
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -25,11 +25,11 @@ function ContactUS() {
       companyName: companyName,
       phoneNumber: phoneNumber,
     };
-
+    console.log(templateParams);
     emailJs
-      .send(serviceID, templateID, publicKey, templateParams)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
       .then((response) => {
-        console.log("Email Sent Successfully!", response);
+        alert("Email Sent Successfully!");
         setName("");
         setEmail("");
         setCompanyName("");
@@ -38,6 +38,7 @@ function ContactUS() {
       })
       .catch((error) => {
         console.log("Error Sending Email:", error);
+        alert("Something went Wrong!");
       });
   };
 
@@ -64,13 +65,12 @@ function ContactUS() {
           </div>
           <div className="right-side">
             <div className="topic-text">Contact Us Today!</div>
-                      <p className="form-para"
-                      >
+            <p className="form-para">
               Need a hand? Reach out and let our tech-savvy team turn your IT
               headaches into solutions!
             </p>
 
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="form-main">
                 <div className="input-box sub-left">
                   <div className="input-box">
@@ -79,6 +79,7 @@ function ContactUS() {
                       placeholder="Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
+                      required
                     />
                   </div>
 
@@ -88,6 +89,7 @@ function ContactUS() {
                       placeholder="Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </div>
                 </div>
@@ -105,6 +107,7 @@ function ContactUS() {
                       type="tel"
                       placeholder="Phone Number"
                       value={phoneNumber}
+                      required
                       onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </div>
@@ -115,11 +118,10 @@ function ContactUS() {
                   value={message}
                   placeholder="Enter Your Message Here"
                   onChange={(e) => setMessage(e.target.value)}
-                  
                 ></textarea>
               </div>
               <div className="button">
-                <input type="button" value="Send Email" />
+                <button type="submit">Send Email</button>
               </div>
             </form>
           </div>

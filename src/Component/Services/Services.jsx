@@ -5,12 +5,12 @@ import serviceData from "../../Data/serviceData.json";
 function Services() {
   const handleLeft = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
+    slider.scrollLeft += slider.offsetWidth;
   };
 
   const handleRight = () => {
     let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
+    slider.scrollLeft -= slider.offsetWidth;
   };
   return (
     <div className="services-main">
@@ -26,7 +26,7 @@ function Services() {
 
         {/* Slider of images */}
 
-        <div id="slider">
+        <div id="slider" style={{ width: `${serviceData.length * 100}%` }}>
           {serviceData.map((services, idx) => {
             return (
               <div className="slider-card" key={idx}>

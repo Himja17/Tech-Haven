@@ -15,5 +15,17 @@
   border-radius: 15px;
   text-align: center;
   z-index: 2;
- transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+@mixin tabletView {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin mobileView {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
 }

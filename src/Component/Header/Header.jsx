@@ -1,8 +1,15 @@
 import "./Header.scss";
 import logo from "../../Assets/Logo/logo.png";
 import { Link } from "react-router-dom";
+import { MdMenu } from "react-icons/md";
+import { useState } from "react";
 
 function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  
+
+
   return (
     <nav className="header">
       <div className="header__logo">
@@ -16,6 +23,7 @@ function Header() {
           <Link to="/" className="header__links--each">
             <li>Home</li>
           </Link>
+
           <Link to="/services" className="header__links--each">
             <li>Services</li>
           </Link>
@@ -27,6 +35,7 @@ function Header() {
           </Link>
         </ul>
       </div>
+      <MdMenu className="hamburger" id="hamburger-toggle"/>
     </nav>
   );
 }
