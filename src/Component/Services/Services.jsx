@@ -26,7 +26,7 @@ function Services() {
 
         {/* Slider of images */}
 
-        <div id="slider" style={{ width: `${serviceData.length * 100}%` }}>
+        <div id="slider">
           {serviceData.map((services, idx) => {
             return (
               <div className="slider-card" key={idx}>
