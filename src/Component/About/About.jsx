@@ -2,9 +2,9 @@ import "./About.scss";
 import itWork from "../../Assets/Image/it-work.jpg";
 function About() {
   return (
-    <div className="about__main">
+    <div className="about__main" >
       <h1 className="about__title">
-        IT That Works For You
+        IT That <bold>Works</bold> For You
       </h1>
       <div className="about__img-container">
         <img src={itWork} alt="working technicians" className="about__img" />

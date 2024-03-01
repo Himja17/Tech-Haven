@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import heroImg from "../../Assets/Image/hero-img.jpg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Hero() {
   return (
@@ -12,7 +13,19 @@ function Hero() {
           Response Time, Endless Invoices, And Uncertainity About Compliance
           Regulations?
         </p>
-        <button className="hero__bttn">Learn More</button>
+
+        <button className="hero__bttn">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            Learn More
+          </Link>
+        </button>
       </div>
     </div>
   );

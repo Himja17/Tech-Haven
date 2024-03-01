@@ -6,6 +6,7 @@ import Hero from "./Component/Hero/Hero";
 import Services from "./Component/Services/Services";
 import About from "./Component/About/About";
 import ContactUs from "./Component/ContactUs/ContactUs";
+import { Element } from "react-scroll";
 
 function App() {
   return (
@@ -16,12 +17,21 @@ function App() {
           path="/"
           element={
             <>
-              <Hero />
-              <div id="body">
-                <Services />
-              </div>
-              <About />
-              <ContactUs/>
+              <Element name="hero">
+                <Hero />
+              </Element>
+
+              <Element name="services">
+                <div id="body">
+                  <Services />
+                </div>
+              </Element>
+              <Element name="about">
+                <About />
+              </Element>
+              <Element name="contact">
+                <ContactUs />
+              </Element>
             </>
           }
         />

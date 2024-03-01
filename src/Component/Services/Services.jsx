@@ -2,6 +2,7 @@ import "./Services.scss";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import serviceData from "../../Data/serviceData.json";
 
+
 function Services() {
   const handleLeft = () => {
     let slider = document.getElementById("slider");
@@ -13,7 +14,7 @@ function Services() {
     slider.scrollLeft -= slider.offsetWidth;
   };
   return (
-    <div className="services-main">
+    <div className="services-main" >
       <h1>OUR SERVICES</h1>
 
       {/* Slider */}

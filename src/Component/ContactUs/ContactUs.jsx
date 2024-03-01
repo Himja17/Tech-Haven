@@ -43,7 +43,7 @@ function ContactUS() {
   };
 
   return (
-    <div className="main-container">
+    <div className="main-container" >
       <div className="container">
         <div className="content">
           <div className="left-side">
