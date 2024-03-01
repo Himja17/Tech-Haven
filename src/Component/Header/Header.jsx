@@ -47,7 +47,6 @@ function Header() {
                 to="hero"
                 spy={true}
                 smooth={true}
-                offset={-100}
                 duration={100}
                 onClick={handleToggleClose}
               >
@@ -61,7 +60,6 @@ function Header() {
                 to="services"
                 spy={true}
                 smooth={true}
-                offset={-70}
                 duration={500}
                 onClick={handleToggleClose}
               >
@@ -75,7 +73,6 @@ function Header() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
                 duration={500}
                 onClick={handleToggleClose}
               >
@@ -89,7 +86,6 @@ function Header() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
                 duration={500}
                 onClick={handleToggleClose}
               >
