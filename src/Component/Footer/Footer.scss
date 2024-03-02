@@ -1,3 +1,5 @@
+@import "../../styles/partials/mixins";
+
 .footer-main {
   margin: 15px;
   display: flex;
@@ -8,4 +10,9 @@
 
 .footer-copyright {
   font-weight: 600;
+}
+@include mobileView {
+  .footer-main {
+    text-align: center;
+  }
 }
