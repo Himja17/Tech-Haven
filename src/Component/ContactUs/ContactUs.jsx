@@ -43,24 +43,36 @@ function ContactUS() {
   };
 
   return (
-    <div className="main-container" >
+    <div className="main-container">
       <div className="container">
         <div className="content">
           <div className="left-side">
-            <div className="address details">
+            <div className=" details">
               <MdLocationOn className="icons" />
               <div className="topic">Address</div>
               <div className="text-one">Kitchener, ON</div>
             </div>
-            <div className="phone details">
+            <div className=" details">
               <MdLocalPhone className="icons" />
               <div className="topic">Phone</div>
               <div className="text-one">+1 (289) 659-8987</div>
             </div>
-            <div className="email details">
+            <div className=" details">
               <MdEmail className="icons" />
               <div className="topic">Email</div>
               <div className="text-one">support@tech-haven.ca</div>
+            </div>
+            <div className=" details">
+              <a href="https://www.linkedin.com/company/tech-haven1/">
+                <img
+                  src={require("../../Assets/Logo/linkedin.png")}
+                  alt="LinkedIn Logo"
+                  style={{ width: "60px" }}
+                />
+              </a>
+
+              <div className="topic">Social</div>
+              <div className="text-one">LinkedIn</div>
             </div>
           </div>
           <div className="right-side">

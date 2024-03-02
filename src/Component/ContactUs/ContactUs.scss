@@ -152,9 +152,10 @@ form {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .content .left-side .details{
+  .content .left-side .details {
     padding: 5px;
     margin: 0;
+    width: 40%;
   }
   .container .content .left-side::before {
     display: none;

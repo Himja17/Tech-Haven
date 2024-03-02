@@ -6,6 +6,7 @@ import Hero from "./Component/Hero/Hero";
 import Services from "./Component/Services/Services";
 import About from "./Component/About/About";
 import ContactUs from "./Component/ContactUs/ContactUs";
+import Footer from "./Component/Footer/Footer";
 import { Element } from "react-scroll";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Element name="contact">
                 <ContactUs />
               </Element>
+              <Footer />
             </>
           }
         />
