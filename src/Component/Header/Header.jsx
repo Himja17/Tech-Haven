@@ -47,7 +47,8 @@ function Header() {
                 to="hero"
                 spy={true}
                 smooth={true}
-                duration={100}
+                duration={500}
+                offset={-250}
                 onClick={handleToggleClose}
               >
                 Home
@@ -60,6 +61,7 @@ function Header() {
                 to="services"
                 spy={true}
                 smooth={true}
+                offset={-250}
                 duration={500}
                 onClick={handleToggleClose}
               >
@@ -74,6 +76,7 @@ function Header() {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-250}
                 onClick={handleToggleClose}
               >
                 About
@@ -87,6 +90,7 @@ function Header() {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-250}
                 onClick={handleToggleClose}
               >
                 Contact
