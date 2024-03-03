@@ -26,7 +26,7 @@ function About() {
           business or enjoying their home life.
         </p>
       </div>
-      <div>
+      <div className="about-subsection">
         <h2 className="about-content__subtitle">What Makes Us Stand Out?</h2>
         <ul className="about-content__list">
           <li>

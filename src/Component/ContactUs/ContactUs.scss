@@ -198,3 +198,68 @@ form {
     margin: 0;
   }
 }
+@include tabletView {
+  .form-para {
+    width: 80%;
+  }
+  .container {
+    margin: 40px 0;
+    height: 100%;
+    width: 60%;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .content .left-side .details {
+    padding: 5px;
+    width: 40%;
+  }
+  .content .left-side .details:nth-last-child{
+    margin-top: 0;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 100px;
+  }
+  .form-main {
+    height: 13rem;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-side .message-box textarea {
+    height: 80px;
+    margin-top: 80px;
+    margin-left: 13px;
+    width: 60%;
+  }
+  .right-side .input-box {
+    height: auto;
+    margin: 0;
+    width: 80%;
+  }
+  .right-side .input-box input {
+    height: 50px;
+    margin: 5px;
+  }
+  .button {
+    margin-left: 20px;
+  }
+  .message-box {
+    min-height: 0;
+  }
+  .left-side {
+    margin: 0;
+  }
+}

@@ -114,3 +114,30 @@
     opacity: 1;
   }
 }
+@include tabletView {
+  .header__logo img {
+    width: 12rem;
+  }
+  .header {
+    margin: 15px;
+  }
+  .header__links--each {
+    font-size: 1.5rem;
+  }
+
+  .header__links--each::after {
+    content: "";
+    height: 4px;
+    width: 70%;
+    background-color: rgb(36, 122, 214);
+    position: absolute;
+    bottom: -5px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+
+  .header__links--each:hover::after {
+    opacity: 1;
+  }
+}
